@@ -1,0 +1,199 @@
+
+body {
+    font-family: 'Helvetica Neue', sans-serif;
+    margin: 0;
+    padding: 0;
+    color: #333;
+    line-height: 1.6;
+}
+
+.hero {
+    background: linear-gradient(90deg, #0073e6 100%);
+    color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 30px 20px;
+    text-align: center;
+    min-height: 500px;
+}
+.product-video {
+  background: #f9f9f9;
+  padding: 60px 20px;
+  text-align: center;
+}
+
+.video-wrapper {
+  max-width: 800px;
+  margin: 30px auto;
+}
+
+.video-wrapper video {
+  width: 100%;
+  height: auto;
+  border-radius: 8px;
+  box-shadow: 0 4px 20px rgba(0,0,0,0.1);
+}
+
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+/* 各セクションの画像マージンだけを定義（最小限） */
+.problem img,
+.solution img,
+.features img,
+.performance img,
+.introduction img,
+.question img,
+.structure img {
+    margin: 20px auto;
+    display: block;
+}
+
+
+
+.image-row {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 10px; /* 画像の間隔 */
+    margin-bottom: 10px;
+}
+
+
+.logo {
+    max-width: 300px;
+    height: auto;
+    margin-top: -40px;
+}
+
+
+
+.product-image {
+    max-width: 300px;
+    height: auto;
+}
+
+
+
+h1 {
+    font-size: 2.5em;
+    margin-bottom: 10px;
+}
+
+.subtext {
+    font-size: 1em;
+    color: #ddd;
+}
+
+
+
+section {
+    padding: 100px 100px;
+    background-size: cover;
+    background-repeat: no-repeat;
+    text-align: center;
+}
+
+.problems ul {
+    list-style-type: "✔ ";
+    padding: 0;
+    text-align: left;
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+
+
+.features .cards {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.features .card {
+    background: #f5f5f5;
+    padding: 20px;
+    border-radius: 10px;
+    width: 250px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+}
+
+
+.cta {
+    background: #0073e6;
+    color: white;
+    padding: 50px 20px;
+}
+
+.images {
+    margin-top: 30px;
+    margin-bottom: 10px;
+}
+
+.cta .btn {
+    background: white;
+    color: #0073e6;
+    padding: 10px 30px;
+    border-radius: 5px;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+footer {
+    background: #f5f5f5;
+    text-align: center;
+    padding: 20px;
+    font-size: 0.9em;
+}
+.product-image {
+    display: block;        /* ブロック要素として扱う */
+    margin: 20px auto 0px;   /* 上: 0, 横: 自動で中央寄せ, 下: 20px の余白 */
+    max-width: 100%;       /* レスポンシブ対応 */
+    height: auto;          /* アスペクト比維持 */
+    position: relative;    /* 必要に応じて調整 */
+    top: -50px;             /* 上に20px移動（必要に応じて増減） */
+    left: 0px;            /* 左に10px移動（必要に応じて） */
+}
+
+@media (max-width: 768px) {
+    .hero {
+        padding: 20px 10px;
+    }
+
+    .image-row {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .logo,
+    .product-image {
+        max-width: 90%;
+        height: auto;
+    }
+
+    section img {
+    display: block !important;
+    width: 90% !important;
+    max-width: 600px !important;
+    height: auto !important;
+    margin: 20px auto !important;
+  }
+
+  section {
+    padding: 40px 10px !important; /* スマホ用にパディング調整 */
+  }
+    h1 {
+        font-size: 1.8em;
+    }
+
+    .subtext {
+        font-size: 0.9em;
+    }
+}
